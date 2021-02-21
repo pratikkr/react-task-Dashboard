@@ -1,0 +1,92 @@
+body{
+    margin: 0%;
+}
+.main{
+    width: 100%;
+    display: flex;
+    margin-top: 0%;
+}
+
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 12%;
+    background-color: rgb(133, 128, 128);
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 100%;
+    
+    
+}
+a{
+    display: inline-block;
+    color: white;
+    padding: 25px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.fas{
+    padding: 8px;
+    font-size: 15px;
+}
+.fab{
+    padding: 8px;
+    font-size: 25px;
+}
+.toggle{
+    width: 50px;
+    text-align: center;
+    background-color:white ;
+    margin-left: 30%;
+    border-radius: 3px;
+}
+
+.dashboard{
+    padding-top: 0%;
+    background-color: rgb(250, 244, 244);
+    width: 88vw;
+    padding-left: 10px;
+}
+#toggle.clicked{
+    width: 15px;
+}
+li{
+    list-style: none;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #222;
+    width: 50px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+aside.sidebar:hover {
+    width: 200px;
+}
+
+.chart-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+#container-pie,#container{
+    width: 100%;
+    height:500px;
+        
+        margin-left: 0;
+        padding: 0;
+}
+#container{
+    width: 700px;
+}
+.chart{
+    margin-top: ;
+    margin-right: 25%;
+    margin-left: 15%;
+}
