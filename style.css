@@ -1,73 +1,82 @@
 body{
     margin: 0%;
 }
-.main{
+.side-nav {
+    position: absolute;
     width: 100%;
-    display: flex;
-    margin-top: 0%;
+    height: 100vh;
+    background-color: #35475e;
+    z-index: 1;
+    display: none;
 }
 
-
-
-.nav{
-    display: flex;
-    flex-direction: column;
-    /* height: 100%; */
-    width: 12%;
-    background-color: rgb(133, 128, 128);
-    text-align: center;
-    padding: 15px;
-    padding-bottom: 100%;
-    
-    
+.side-nav ul {
+    margin: 0;
+    padding: 0;
 }
-a{
-    display: inline-block;
-    color: white;
-    padding: 25px;
-    font-size: 15px;
+.side-nav ul li {
+    padding: 16px 16px;
+    border-bottom: 1px solid #3c506a;
+    position: relative;
+}
+.side-nav ul li.active:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.side-nav ul li a {
+    color: #fff;
+    display: block;
     text-decoration: none;
 }
-.fas{
-    padding: 8px;
-    font-size: 15px;
-}
-.fab{
-    padding: 8px;
-    font-size: 25px;
-}
-.toggle{
-    width: 50px;
+.side-nav ul li i {
+    color: #0497df;
+    min-width: 20px;
     text-align: center;
-    background-color:white ;
-    margin-left: 30%;
-    border-radius: 3px;
+}
+.side-nav ul li span:nth-child(2) {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.dashboard{
-    padding-top: 0%;
-    background-color: rgb(250, 244, 244);
-    width: 88vw;
-    padding-left: 10px;
+@media screen and (min-width: 600px) {
+    .side-nav {
+        display: block;
+        width: 70px;
+        z-index: 2;
+    }
+    .side-nav ul li span:nth-child(2) {
+        display: none;
+    }
+    .side-nav ul li i {
+        font-size: 26px;
+    }
+    .side-nav ul li a {
+        text-align: center;
+    }
+    .main-content {
+        margin-left: 70px;
+    }
 }
-#toggle.clicked{
-    width: 15px;
-}
-li{
-    list-style: none;
-}
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    background: #222;
-    width: 50px;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-aside.sidebar:hover {
-    width: 200px;
+
+@media screen and (min-width: 800px) {
+    .side-nav {
+        width: 200px;
+    }
+    .side-nav ul li span:nth-child(2) {
+        display: inline-block;
+    }
+    .side-nav ul li i {
+        font-size: 16px;
+    }
+    .side-nav ul li a {
+        text-align: left;
+    }
 }
 
 .chart-container{
