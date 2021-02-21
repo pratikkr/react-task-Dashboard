@@ -5,7 +5,7 @@ function loadMap() {
         zoom: 7
     }
 
-    var map = new google.maps.Map(document.getElementById("sample"), mapOptions);
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(17.088291, 78.442383),
